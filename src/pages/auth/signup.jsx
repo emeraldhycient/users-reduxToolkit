@@ -47,7 +47,7 @@ function Signup() {
           Signup
         </button>
         <p>
-          <a href="/login" class="text-decoration-none mt-4">
+          <a href="/login" className="text-decoration-none mt-4">
             Login
           </a>
         </p>

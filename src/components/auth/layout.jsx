@@ -6,7 +6,7 @@ function Layout(props) {
   }, []);
   return (
     <div className="flex justify-center items-center h-screen">
-      <div className="bg-gray-50  w-4/12 p-3 shadow ">
+      <div className="bg-gray-50  w-11/12 md:w-4/12 p-3 shadow ">
         <h1 className="text-slate-800 font-bold text-xl text-center">
           {props.title}
         </h1>
