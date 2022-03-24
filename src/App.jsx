@@ -1,45 +1,41 @@
-import { useState } from 'react'
-import logo from './logo.svg'
-import './App.css'
+import { useState } from "react";
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Vite + React!</p>
-        <p>
-          <button type="button" onClick={() => setCount((count) => count + 1)}>
-            count is: {count}
+    <div className="flex justify-center items-center h-screen">
+      <div className="bg-gray-50  w-4/12 p-3 shadow ">
+        <h1 className="text-slate-800 font-bold text-xl text-center">
+          Login users-reduxToolkit 🚪
+        </h1>
+        <form action="" className="pt-5 text-center">
+          <input
+            type="email"
+            name=""
+            id=""
+            className="border-b-[.145rem] w-10/12 h-10 mb-3 rounded focus:outline-none"
+          />
+          <input
+            type="password"
+            name=""
+            id=""
+            className="border-b-[.145rem] w-10/12 h-10 mb-3 rounded focus:outline-none"
+          />
+          <button
+            type="submit"
+            className="bg-slate-800 w-10/12 h-10 mb-3 rounded text-purple-700	"
+          >
+            Login
           </button>
-        </p>
-        <p>
-          Edit <code>App.jsx</code> and save to test HMR updates.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          {' | '}
-          <a
-            className="App-link"
-            href="https://vitejs.dev/guide/features.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vite Docs
-          </a>
-        </p>
-      </header>
+          <p>
+            <a href="/signup" class="text-decoration-none mt-4">
+              Signup
+            </a>
+          </p>
+        </form>
+      </div>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
