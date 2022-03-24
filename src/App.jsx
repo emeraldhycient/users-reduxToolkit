@@ -1,10 +1,17 @@
 import Login from "./pages/auth/login";
 import Signup from "./pages/auth/signup";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
   return (
     <>
-      <Signup />
+      <Router>
+        <Switch>
+          <Route path="/" component={Login} />
+          <Route path="/signup" component={Signup} />
+          <Route path="/login" component={Login} />
+        </Switch>
+      </Router>
     </>
   );
 }
